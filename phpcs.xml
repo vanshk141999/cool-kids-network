@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Example Project" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<description>A custom set of rules to check for a WPized WordPress project</description>
+
+	<file>.</file>
+
+	<!-- Exclude WP Core folders and files from being checked. -->
+	<exclude-pattern>/docroot/wp-admin/*</exclude-pattern>
+	<exclude-pattern>/docroot/wp-includes/*</exclude-pattern>
+	<exclude-pattern>/docroot/wp-*.php</exclude-pattern>
+	<exclude-pattern>/docroot/index.php</exclude-pattern>
+	<exclude-pattern>/docroot/xmlrpc.php</exclude-pattern>
+	<exclude-pattern>/docroot/wp-content/plugins/*</exclude-pattern>
+
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+
+	<!-- Exclude the PHPUNIT Tests directory. -->
+	<exclude-pattern>/tests/*</exclude-pattern>
+
+	<!-- Exclude the Node Modules directory. -->
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+
+	<!-- Exclude minified Javascript files. -->
+	<exclude-pattern>*.js</exclude-pattern>
+
+	<!-- Strip the filepaths down to the relevant bit. -->
+	<arg name="basepath" value="."/>
+
+	<!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
+
+
+	<!--
+	#############################################################################
+	SET UP THE RULESETS
+	#############################################################################
+	-->
+
+	<!-- Include the WordPress-Extra standard. -->
+	<rule ref="WordPress-Extra">
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
+		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
+		<exclude name="Generic.WhiteSpace.ScopeIndent"/>
+		<exclude name="WordPress.Arrays.ArrayIndentation"/>
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment"/>
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.SpacingBefore"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.Indent"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.OpenTagIndent"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.SpacingAfter"/>
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+		<exclude name="WordPress.WhiteSpace.OperatorSpacing"/>
+		<exclude name="Squiz.Strings.ConcatenationSpacing"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing"/>
+		<exclude name="Generic.Formatting.SpaceAfterCast"/>
+		<exclude name="Squiz.WhiteSpace.CastSpacing"/>
+		<exclude name="WordPress.WhiteSpace.CastStructureSpacing"/>
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions"/>
+		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/>
+		<exclude name="Squiz.WhiteSpace.SemicolonSpacing"/>
+		<exclude name="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+		<exclude name="Generic.Files.EndFileNewline.NotFound" />
+		<exclude name="Internal.Tokenizer.Exception" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+	</rule>
+
+	<!-- Let's also check that everything is properly documented. -->
+	<rule ref="WordPress-Docs"/>
+
+	<!-- Add in some extra rules from other standards. -->
+	<rule ref="Generic.Commenting.Todo"/>
+
+	<!--
+	#############################################################################
+	SNIFF SPECIFIC CONFIGURATION
+	#############################################################################
+	-->
+
+	<!--
+	To get the optimal benefits of using WordPressCS, we should add a couple of
+	custom properties.
+	Adjust the values of these properties to fit our needs.
+
+	For information on additional custom properties available, check out
+	the wiki:
+	https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
+	-->
+	<config name="minimum_wp_version" value="6.7"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="ckn"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="CKN"/>
+			</property>
+		</properties>
+	</rule>
+
+</ruleset>

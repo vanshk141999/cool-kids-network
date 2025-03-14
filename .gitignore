@@ -1,0 +1,36 @@
+# IDE Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.log
+*.tmp
+*.swp
+*~
+
+# WordPress Testing
+.phpunit.result.cache
+/phpunit.xml
+
+# Composer
+/vendor/
+/composer.lock
+
+# Node.js
+/node_modules/
+/package-lock.json
+
+# Build Files
+/build/
+/dist/
+
+# Misc
+.env
+.env.*
+!.env.example

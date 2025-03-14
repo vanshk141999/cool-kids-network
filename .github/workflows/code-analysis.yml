@@ -1,0 +1,49 @@
+name: Code Analysis
+
+# Runs on every pull request to the main branch.
+on: pull_request
+
+# Cancels all previous workflow runs for pull requests that have not completed.
+concurrency:
+  # The concurrency group contains the workflow name and the branch name for pull requests
+  # or the commit hash for any other events.
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php: ["8.3"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+          tools: composer, cs2pr, phpcs
+
+      - name: Install composer dependencies
+        run: composer install --prefer-dist --no-suggest --no-progress
+
+      - name: Run phpcs
+        id: phpcs
+        if: always()
+        run: vendor/bin/phpcs -ps . --standard=phpcs.xml
+
+      - name: Lint JS
+        if: always()
+        run: npm run lint-js
+
+      - name: Lint CSS
+        if: always()
+        run: npm run lint-css
