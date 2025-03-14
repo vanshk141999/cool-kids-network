@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Cool Kids Network
- * Description: Cool Kids Network is a WordPress plugin for user registration, role-based access control, and character management.
+ * Description: The Cool Kids Network plugin brings a unique user management system to your WordPress site. It allows users to sign up and automatically receive a fun, randomly generated character with a name, country, and role.
  * Plugin URI: https://vansh-kapoor.vercel.app/
  * Version: 1.0.0
  * Author: Vansh Kapoor
