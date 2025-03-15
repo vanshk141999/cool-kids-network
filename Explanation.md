@@ -142,19 +142,22 @@ Utilizes WordPress user meta tables for:
 
 Add these shortcodes to any page or post:
 
-1. Registration Form:
+Please note that [site_url] should be replaced with your actual site URL.
+
+1. First, add the following shortcode to render the Home Page:
 
    ```
-   [ckn_register]
+   [ckn_home login_url=[site_url]/ckn-login signup_url=[site_url]/ckn-signup" dashboard_url=[site_url]/ckn-dashboard/]
    ```
 
-2. Login Form:
+2. Next, add the following shortcodes to render the Login and Signup forms. Please note that you need to add these shortcodes to separate pages:
 
    ```
-   [ckn_login]
+   [ckn_login dashboard_url=[site_url]/ckn-dashboard/]
+   [ckn_signup dashboard_url=[site_url]/ckn-dashboard/]
    ```
 
-3. User Dashboard:
+3. Finally, add the following shortcode to render the Dashboard page:
    ```
    [ckn_dashboard]
    ```
