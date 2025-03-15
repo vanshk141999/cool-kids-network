@@ -55,7 +55,7 @@ class Frontend {
 		?>
 		<div class="ckn-welcome">
 			<div class="ckn-left">
-				<img src="<?php echo esc_attr( CKN_ASSETS ) . '/images/hero-image.jpeg'; ?>" alt="<?php esc_html_e( 'Cool Kids', 'ckn' ); ?>">
+				<img src="<?php echo esc_attr( CKN_ASSETS ) . '/images/hero-image.webp'; ?>" alt="<?php esc_html_e( 'Cool Kids', 'ckn' ); ?>">
 			</div>
 			<div class="ckn-right">
 				<h1><?php esc_html_e( 'Welcome to Cool Kids Network', 'ckn' ); ?></h1>
