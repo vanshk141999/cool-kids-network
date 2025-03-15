@@ -2,7 +2,7 @@
 /**
  * Plugin Loader.
  *
- * @package Cool_Kids_Network
+ * @package CKN
  * @since 1.0.0
  */
 

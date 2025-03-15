@@ -2,7 +2,7 @@
 /**
  * Frontend Class for rendering shortcodes and enqueueing scripts and styles
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Frontend Class for rendering shortcodes and enqueueing scripts and styles
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 class Frontend {
@@ -214,7 +214,7 @@ class Frontend {
 				$users = get_users(array( 'number' => $users_per_page, 'offset' => ($paged - 1) * $users_per_page ));
 
 				// exclude current user from the list.
-				$users = array_filter($users, function ($user) use ($current_user) {
+				$users = array_filter($users, function ( $user ) use ( $current_user ) {
 					return $user->ID !== $current_user->ID;
 				});
 

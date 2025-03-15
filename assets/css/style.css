@@ -1,418 +1,418 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
 /* Dashboard Container */
 .ckn-dashboard {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 /* Dashboard Layout */
 .ckn-dashboard-ctn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
 
 /* Cards */
 .ckn-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 350px;
-  flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex: 1;
 }
 
 /* Profile Card */
 .ckn-profile-card h3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .ckn-profile-card p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 /* User Badge */
 .ckn-badge {
-  display: inline-block;
-  background-color: #4f4f51;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
+    display: inline-block;
+    background-color: #4f4f51;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 /* Logout Button */
 .ckn-button.logout {
-  display: inline-block;
-  background-color: #635bff;
-  color: #fff;
-  text-align: center;
-  border: 2px solid #635bff;
-  border-radius: 10px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+    display: inline-block;
+    background-color: #635bff;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #635bff;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .ckn-button.logout:hover {
-  border: 2px solid #ff4a4a;
-  background-color: #ff4a4a;
+    border: 2px solid #ff4a4a;
+    background-color: #ff4a4a;
 }
 
 /* Users Table */
 .ckn-users-list {
-  margin-top: 30px;
-  text-align: center;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .ckn-users-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ckn-users-table th,
 .ckn-users-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .ckn-users-table th {
-  background-color: #635bff;
-  color: #fff;
+    background-color: #635bff;
+    color: #fff;
 }
 
 .ckn-users-table tr:hover {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .ckn-dashboard-ctn {
+    .ckn-dashboard-ctn {
     flex-direction: column;
     align-items: center;
-  }
+    }
 
-  .ckn-card {
+    .ckn-card {
     width: 100%;
-  }
+    }
 
-  .ckn-users-table {
+    .ckn-users-table {
     font-size: 14px;
-  }
+    }
 }
 
 /* frontend except dashboard */
 
 /* Centered Forms & Content */
 .ckn-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  max-width: 500px;
-  padding: 20px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
 }
 
 /* Welcome Page Layout */
 .ckn-welcome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #fff;
-  padding: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .ckn-welcome a {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .ckn-welcome .ckn-left {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .ckn-welcome .ckn-left img {
-  width: 65%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
+    width: 65%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 .ckn-welcome .ckn-right {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
 }
 
 .ckn-welcome h1 {
-  color: #333;
-  font-size: 40px;
-  margin-bottom: 10px;
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .ckn-welcome p {
-  color: #555;
-  font-size: 19px;
-  margin-bottom: 20px;
+    color: #555;
+    font-size: 19px;
+    margin-bottom: 20px;
 }
 
 /* Buttons */
 .ckn-button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none !important;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 /* Login Button (Outlined) */
 .ckn-button.login {
-  border: 2px solid #635bff;
-  color: #635bff;
-  background-color: #fff;
+    border: 2px solid #635bff;
+    color: #635bff;
+    background-color: #fff;
 }
 
 .ckn-button.login:hover {
-  background-color: #635bff;
-  color: #fff;
+    background-color: #635bff;
+    color: #fff;
 }
 
 /* Signup Button (Solid) */
 .ckn-button.signup {
-  background-color: #635bff;
-  color: #fff;
-  border: 2px solid #635bff;
+    background-color: #635bff;
+    color: #fff;
+    border: 2px solid #635bff;
 }
 
 .ckn-button.signup:hover {
-  border: 2px solid #5046d3;
-  background-color: #5046d3;
+    border: 2px solid #5046d3;
+    background-color: #5046d3;
 }
 
 /* Forms */
 .ckn-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px !important;
 }
 
 /* Input Fields */
 .ckn-form input {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #635bff;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #635bff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
 }
 
 /* Submit Buttons */
 .ckn-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #635bff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+    width: 100%;
+    padding: 12px;
+    background-color: #635bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .ckn-form button:hover {
-  background-color: #5046d3;
+    background-color: #5046d3;
 }
 
 /* Already Logged In Section */
 .ckn-logged-in {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  height: 100vh;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+    text-align: center;
 }
 
 .ckn-logged-in p {
-  font-size: 19px;
-  color: #333;
-  font-weight: 700;
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
 }
 
 .ckn-logged-in .ckn-buttons {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .ckn-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
 }
 
 .ckn-pagination .ckn-button {
-  padding: 8px 12px;
-  border: 1px solid #635bff;
-  color: #635bff;
-  text-decoration: none !important;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+    padding: 8px 12px;
+    border: 1px solid #635bff;
+    color: #635bff;
+    text-decoration: none !important;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .ckn-pagination .ckn-button:hover {
-  background-color: #635bff;
-  color: #fff;
+    background-color: #635bff;
+    color: #fff;
 }
 
 .ckn-pagination .ckn-active {
-  background-color: #635bff;
-  color: #fff;
-  font-weight: 700;
-  border: 1px solid #635bff;
+    background-color: #635bff;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #635bff;
 }
 
 /* 🎯 Responsiveness */
 @media (max-width: 1024px) {
-  .ckn-welcome {
+    .ckn-welcome {
     flex-direction: column;
     text-align: center;
-  }
+    }
 
-  .ckn-welcome .ckn-left img {
+    .ckn-welcome .ckn-left img {
     width: 80%;
-  }
+    }
 
-  .ckn-welcome .ckn-right {
+    .ckn-welcome .ckn-right {
     padding: 10px;
-  }
+    }
 
-  .ckn-welcome h1 {
+    .ckn-welcome h1 {
     font-size: 32px;
-  }
+    }
 
-  .ckn-welcome p {
+    .ckn-welcome p {
     font-size: 16px;
-  }
+    }
 }
 
 @media (max-width: 768px) {
-  .ckn-container {
+    .ckn-container {
     max-width: 90%;
     height: auto;
-  }
+    }
 
-  .ckn-welcome {
+    .ckn-welcome {
     height: auto;
     flex-direction: column;
     padding: 15px;
-  }
+    }
 
-  .ckn-welcome .ckn-left img {
+    .ckn-welcome .ckn-left img {
     width: 75%;
-  }
+    }
 
-  .ckn-welcome .ckn-right {
+    .ckn-welcome .ckn-right {
     padding: 10px;
-  }
+    }
 
-  .ckn-button {
+    .ckn-button {
     padding: 10px 20px;
     font-size: 16px;
-  }
+    }
 
-  .ckn-form {
+    .ckn-form {
     max-width: 90%;
-  }
+    }
 
-  .ckn-form input {
+    .ckn-form input {
     padding: 10px;
     font-size: 14px;
-  }
+    }
 
-  .ckn-form button {
+    .ckn-form button {
     padding: 10px;
     font-size: 16px;
-  }
+    }
 
-  .ckn-users-list {
+    .ckn-users-list {
     overflow-x: scroll;
-  }
+    }
 }
 
 @media (max-width: 480px) {
-  .ckn-welcome h1 {
+    .ckn-welcome h1 {
     font-size: 28px;
-  }
+    }
 
-  .ckn-welcome p {
+    .ckn-welcome p {
     font-size: 14px;
-  }
+    }
 
-  .ckn-welcome .ckn-left img {
+    .ckn-welcome .ckn-left img {
     width: 90%;
-  }
+    }
 
-  .ckn-container {
+    .ckn-container {
     padding: 10px;
-  }
+    }
 
-  .ckn-button {
+    .ckn-button {
     padding: 8px 16px;
     font-size: 14px;
-  }
+    }
 
-  .ckn-form {
+    .ckn-form {
     padding: 15px;
     max-width: 100%;
-  }
+    }
 
-  .ckn-form input {
+    .ckn-form input {
     padding: 8px;
     font-size: 13px;
-  }
+    }
 
-  .ckn-form button {
+    .ckn-form button {
     padding: 10px;
     font-size: 14px;
-  }
+    }
 
-  .ckn-logged-in p {
+    .ckn-logged-in p {
     font-size: 16px;
-  }
+    }
 }
