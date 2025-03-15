@@ -2,7 +2,7 @@
 /**
  * User Management Class for handling user registration and login
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * User Management Class for handling user registration and login
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 class User_Management {

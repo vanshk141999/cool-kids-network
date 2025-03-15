@@ -2,7 +2,7 @@
 /**
  * Admin Class for admin menu page to show API key to the admin
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Admin Class for admin menu page to show API key to the admin
  *
- * @package WAC\Includes
+ * @package CKN\Includes
  * @since 1.0.0
  */
 class Admin {

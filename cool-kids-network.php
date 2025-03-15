@@ -11,7 +11,7 @@
  * License: GPLv3
  * Text Domain: ckn
  *
- * @package Cool_Kids_Network
+ * @package CKN
  */
 
 if ( ! defined( constant_name: 'ABSPATH' ) ) {
