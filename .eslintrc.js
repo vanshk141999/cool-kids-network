@@ -22,9 +22,18 @@ module.exports = {
 	},
 	parserOptions: {
 		requireConfigFile: false,
-		babelOptions: {},
 	},
 	globals: {
 		cknAjax: true,
 	},
+	ignorePatterns: [
+		'.cache',
+		'.circleci',
+		'.github',
+		'bin',
+		'includes',
+		'node_modules',
+		'tests',
+		'vendor',
+	],
 };

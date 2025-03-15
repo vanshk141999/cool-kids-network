@@ -2,7 +2,6 @@
   "name": "ckn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "pretty": "prettier --check .",
     "pretty:fix": "prettier --write .",
@@ -12,16 +11,8 @@
     "lint-css:fix": "npm run lint-css -- --fix",
     "format": "wp-scripts format"
   },
-  "repository": "",
-  "author": "Vansh Kapoor",
-  "license": "GPL",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "devDependencies": {
-    "@wordpress/scripts": "^30.12.0",
-    "wp-prettier": "^2.6.2"
+    "@wordpress/scripts": "^30.12.0"
   },
   "private": true
 }
