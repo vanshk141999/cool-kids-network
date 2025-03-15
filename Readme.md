@@ -2,7 +2,7 @@
 
 The Cool Kids Network plugin brings a unique user management system to your WordPress site. It allows users to sign up and automatically receive a fun, randomly generated character with a name, country, and role.
 
-Demo -
+Demo - https://www.loom.com/share/8e310672962348ef822e8bd362e2013f?sid=f95d91ed-0ebb-4422-9115-39604da10274
 
 Download Plugin - https://github.com/vanshk141999/cool-kids-network/releases/tag/v1.0.0
 
