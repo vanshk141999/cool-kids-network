@@ -19,7 +19,8 @@ if ( ! defined( constant_name: 'ABSPATH' ) ) {
 }
 
 define( 'CKN_VERSION', '1.0.0' );
-define( 'CKN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'CKN_ASSETS', plugin_dir_url( __FILE__ ) . 'assets' );
+define( 'CKN_FILE', __FILE__ );
+define( 'CKN_PATH', plugin_dir_path( CKN_FILE ) );
+define( 'CKN_ASSETS', plugin_dir_url( CKN_FILE ) . 'assets' );
 
 require_once CKN_PATH . 'plugin-loader.php';

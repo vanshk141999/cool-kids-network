@@ -46,6 +46,53 @@ class Plugin_Loader {
 		 */
 		spl_autoload_register( array( $this, 'autoload' ) );
 		add_action( 'init', array( $this, 'load_core_files' ) );
+		register_activation_hook( CKN_FILE, array( $this, 'register_roles' ) ); // Register roles on plugin activation.
+		register_deactivation_hook( CKN_FILE, array( $this, 'unregister_roles' ) ); // Unregister roles on plugin deactivation.
+	}
+
+	/**
+	 * Register roles for users - cool_kid, cooler_kid, and coolest_kid on plugin activation
+	 *
+	 * @access public
+	 * @hooked init
+	 * @since 1.0.0
+	 * @return void
+	 */
+	public function register_roles() {
+		add_role( 'cool_kid', 'Cool Kid', array( 'read' => true ) );
+
+		add_role(
+			'cooler_kid',
+			'Cooler Kid',
+			array(
+				'read'              => true,
+				'view_others_basic' => true,
+			)
+		);
+
+		add_role(
+			'coolest_kid',
+			'Coolest Kid',
+			array(
+				'read'              => true,
+				'view_others_basic' => true,
+				'view_others_email' => true,
+			)
+		);
+	}
+
+	/**
+	 * Unregister roles for users - cool_kid, cooler_kid, and coolest_kid on plugin deactivation
+	 *
+	 * @access public
+	 * @hooked init
+	 * @since 1.0.0
+	 * @return void
+	 */
+	public function unregister_roles() {
+		remove_role( 'cool_kid' );
+		remove_role( 'cooler_kid' );
+		remove_role( 'coolest_kid' );
 	}
 
 	/**

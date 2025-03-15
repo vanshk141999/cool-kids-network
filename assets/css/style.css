@@ -69,6 +69,10 @@ body {
 	background-color: #ff4a4a;
 }
 
+.ckn-no-users {
+	text-align: center;
+}
+
 /* Users Table */
 .ckn-users-list {
 	margin-top: 30px;
