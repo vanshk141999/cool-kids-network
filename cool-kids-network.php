@@ -8,7 +8,7 @@
  * Author URI: https://vansh-kapoor.vercel.app/
  * Requires at least: 6.7
  * Requires PHP: 7.4
- * License: GPLv2 or later
+ * License: GPLv3
  * Text Domain: ckn
  *
  * @package Cool_Kids_Network

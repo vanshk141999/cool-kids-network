@@ -147,17 +147,17 @@ Please note that [site_url] should be replaced with your actual site URL.
 1. First, add the following shortcode to render the Home Page:
 
    ```
-   [ckn_home login_url=[site_url]/ckn-login signup_url=[site_url]/ckn-signup" dashboard_url=[site_url]/ckn-dashboard/]
+   [ckn_home login_url=[site_url]/ckn-login signup_url=[site_url]/ckn-signup dashboard_url=[site_url]/ckn-dashboard/]
    ```
 
-2. Next, add the following shortcodes to render the Login and Signup forms. Please note that you need to add these shortcodes to separate pages:
+2. Next, add the following shortcodes to render the Login and Signup forms. Please note that you need to add these shortcodes to separate pages with names - `ckn-login` and `ckn-signup` respectively:
 
    ```
    [ckn_login dashboard_url=[site_url]/ckn-dashboard/]
    [ckn_signup dashboard_url=[site_url]/ckn-dashboard/]
    ```
 
-3. Finally, add the following shortcode to render the Dashboard page:
+3. Finally, add the following shortcode to render the Dashboard page with name - `ckn-dashboard`:
    ```
    [ckn_dashboard]
    ```

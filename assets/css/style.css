@@ -48,21 +48,17 @@ body {
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 /* Logout Button */
 .ckn-button.logout {
   display: inline-block;
-
-  /* padding: 10px 20px; */
   background-color: #635bff;
   color: #fff;
   text-align: center;
   border: 2px solid #635bff;
   border-radius: 10px;
-
-  /* font-size: 1em; */
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -70,7 +66,6 @@ body {
 
 .ckn-button.logout:hover {
   border: 2px solid #ff4a4a;
-
   background-color: #ff4a4a;
 }
 
@@ -117,11 +112,11 @@ body {
   }
 
   .ckn-users-table {
-    font-size: 0.9em;
+    font-size: 14px;
   }
 }
 
-/* frontend expcept dashboard */
+/* frontend except dashboard */
 
 /* Centered Forms & Content */
 .ckn-container {
@@ -131,7 +126,7 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  max-width: 500px !important;
+  max-width: 500px;
   padding: 20px;
   margin: auto;
 }
@@ -173,13 +168,13 @@ body {
 
 .ckn-welcome h1 {
   color: #333;
-  font-size: 2.5em;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .ckn-welcome p {
   color: #555;
-  font-size: 1.2em;
+  font-size: 19px;
   margin-bottom: 20px;
 }
 
@@ -187,10 +182,10 @@ body {
 .ckn-button {
   display: inline-block;
   padding: 12px 24px;
-  font-size: 1.1em;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -231,7 +226,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 400px !important;
 }
 
 /* Input Fields */
@@ -240,7 +235,7 @@ body {
   padding: 12px;
   border: 2px solid #635bff;
   border-radius: 8px;
-  font-size: 1em;
+  font-size: 16px;
   outline: none;
 }
 
@@ -252,7 +247,7 @@ body {
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 1.1em;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -271,19 +266,15 @@ body {
   gap: 20px;
   height: 100vh;
   text-align: center;
-
-  a {
-    text-decoration: none !important;
-  }
 }
 
 .ckn-logged-in p {
-  font-size: 1.2em;
+  font-size: 19px;
   color: #333;
   font-weight: 700;
 }
 
-.ckn-logged-in .buttons {
+.ckn-logged-in .ckn-buttons {
   display: flex;
   gap: 15px;
 }
@@ -293,17 +284,13 @@ body {
   justify-content: center;
   gap: 8px;
   margin-top: 15px;
-
-  a {
-    text-decoration: none !important;
-  }
 }
 
 .ckn-pagination .ckn-button {
   padding: 8px 12px;
   border: 1px solid #635bff;
   color: #635bff;
-  text-decoration: none;
+  text-decoration: none !important;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
@@ -336,11 +323,11 @@ body {
   }
 
   .ckn-welcome h1 {
-    font-size: 2em;
+    font-size: 32px;
   }
 
   .ckn-welcome p {
-    font-size: 1em;
+    font-size: 16px;
   }
 }
 
@@ -366,7 +353,7 @@ body {
 
   .ckn-button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 16px;
   }
 
   .ckn-form {
@@ -375,12 +362,12 @@ body {
 
   .ckn-form input {
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 14px;
   }
 
   .ckn-form button {
     padding: 10px;
-    font-size: 1em;
+    font-size: 16px;
   }
 
   .ckn-users-list {
@@ -390,11 +377,11 @@ body {
 
 @media (max-width: 480px) {
   .ckn-welcome h1 {
-    font-size: 1.8em;
+    font-size: 28px;
   }
 
   .ckn-welcome p {
-    font-size: 0.9em;
+    font-size: 14px;
   }
 
   .ckn-welcome .ckn-left img {
@@ -407,7 +394,7 @@ body {
 
   .ckn-button {
     padding: 8px 16px;
-    font-size: 0.9em;
+    font-size: 14px;
   }
 
   .ckn-form {
@@ -417,15 +404,15 @@ body {
 
   .ckn-form input {
     padding: 8px;
-    font-size: 0.85em;
+    font-size: 13px;
   }
 
   .ckn-form button {
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 14px;
   }
 
   .ckn-logged-in p {
-    font-size: 1em;
+    font-size: 16px;
   }
 }

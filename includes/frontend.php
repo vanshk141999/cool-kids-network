@@ -103,7 +103,7 @@ class Frontend {
 			?>
 			<div class="ckn-logged-in">
 				<p><?php esc_html_e( 'You are already logged in.', 'ckn' ); ?></p>
-				<div class="buttons">
+				<div class="ckn-buttons">
 					<a href="<?php echo esc_url( $dashboard_url ); ?>" class="ckn-button login"><?php esc_html_e( 'Go to Dashboard', 'ckn' ); ?></a>
 					<button id="ckn-logout" class="ckn-button logout">
 						<?php esc_html_e( 'Logout', 'ckn' ); ?>
