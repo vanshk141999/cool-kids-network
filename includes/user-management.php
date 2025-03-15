@@ -30,42 +30,10 @@ class User_Management {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		add_action( 'init', array( $this, 'register_roles' ) );
 		// AJAX actions for login and signup nopriv is used to allow non-logged in users to access the endpoint.
 		add_action( 'wp_ajax_nopriv_ckn_signup', array( $this, 'ajax_signup' ) );
 		add_action( 'wp_ajax_nopriv_ckn_login', array( $this, 'ajax_login' ) );
 		add_action( 'wp_ajax_ckn_logout', array( $this, 'ajax_logout' ) );
-	}
-
-	/**
-	 * Register roles for users - cool_kid, cooler_kid, and coolest_kid
-	 *
-	 * @access public
-	 * @hooked init
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public function register_roles() {
-		add_role( 'cool_kid', 'Cool Kid', array( 'read' => true ) );
-
-		add_role(
-			'cooler_kid',
-			'Cooler Kid',
-			array(
-				'read'              => true,
-				'view_others_basic' => true,
-			)
-		);
-
-		add_role(
-			'coolest_kid',
-			'Coolest Kid',
-			array(
-				'read'              => true,
-				'view_others_basic' => true,
-				'view_others_email' => true,
-			)
-		);
 	}
 
 	/**

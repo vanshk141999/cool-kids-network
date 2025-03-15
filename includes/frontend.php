@@ -219,7 +219,7 @@ class Frontend {
 				});
 
 				if (empty($users)) {
-					echo '<p>' . esc_html__('No other cool kids found.', 'ckn') . '</p>';
+					echo '<p class="ckn-no-users">' . esc_html__('No other cool kids found.', 'ckn') . '</p>';
 					return ob_get_clean();
 				}
 	
