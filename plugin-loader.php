@@ -54,7 +54,6 @@ class Plugin_Loader {
 	 * Register roles for users - cool_kid, cooler_kid, and coolest_kid on plugin activation
 	 *
 	 * @access public
-	 * @hooked init
 	 * @since 1.0.0
 	 * @return void
 	 */
@@ -85,7 +84,6 @@ class Plugin_Loader {
 	 * Unregister roles for users - cool_kid, cooler_kid, and coolest_kid on plugin deactivation
 	 *
 	 * @access public
-	 * @hooked init
 	 * @since 1.0.0
 	 * @return void
 	 */
